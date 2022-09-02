@@ -1,0 +1,114 @@
+body {
+    background-image: url('./extras/jamesWebbImage.jpg');
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    color: rgb(50,50,50);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 66, 66);
+    transition: 0.1s;
+}
+
+a:hover {
+    color:whitesmoke;
+    border-radius: 50px;
+    background-color: rgb(255, 66, 66);
+    padding: 5px;
+}
+
+a:hover span {
+    color: whitesmoke;
+}
+
+span {
+    color: rgb(150,150,150);
+}
+
+.projects {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 5vh
+}
+
+.main {
+    height: 95vh;
+    width: 95vw;
+    transition: 1s;
+    margin: auto;
+    border-radius: 40px;
+    opacity: 0.9;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.clock {
+    position: absolute;
+    left: 1vw;
+    bottom: -1vh;
+    z-index: 1;
+    color: rgb(215,215,215);
+    font-size: 14px;
+}
+
+.thesis {
+    position: absolute;
+    right: 1vw;
+    bottom: 0.5vh;
+    z-index: 1;
+    width: fit-content;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 475px) {
+    a {
+        font-size: 15px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .projects > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extra {
+        margin-bottom: 1.5vh;
+    }
+
+    .clock {
+        font-size: smaller;
+        bottom: -1.5vh;
+    }
+
+    .thesis > a {
+        font-size: 14px;
+    }
+
+    .thesis {
+        bottom: 0;
+    }
+}

@@ -20,6 +20,7 @@ const getTime = () => {
     let ext = "AM";
 
     if (hours === 0) { hours = 12 }
+    if (hours === 12) { ext = "PM" }
 
     if (hours > 12) { hours -= 12; ext = "PM" }
     if (minutes < 10) { minutes = `0${minutes}` }

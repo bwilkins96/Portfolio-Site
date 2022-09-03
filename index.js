@@ -19,9 +19,11 @@ const getTime = () => {
     let seconds = currentDate.getSeconds();
     let ext = "AM";
 
+    if (hours === 0) { hours = 12 }
+
     if (hours > 12) { hours -= 12; ext = "PM" }
-    if (minutes < 10) {minutes = `0${minutes}`}
-    if (seconds < 10) {seconds = `0${seconds}`}
+    if (minutes < 10) { minutes = `0${minutes}` }
+    if (seconds < 10) { seconds = `0${seconds}` }
 
     return `${hours}:${minutes}:${seconds} ${ext}`;
 }

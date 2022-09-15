@@ -34,7 +34,6 @@ span {
 }
 
 .projects {
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -43,7 +42,7 @@ span {
     height: 70vh;
     width: 80vw;
     margin: auto;
-    margin-top: 5vh
+    margin-top: 5vh;
 }
 
 .main {
@@ -101,7 +100,7 @@ span {
 
     .clock {
         font-size: smaller;
-        bottom: -1.5vh;
+        bottom: 0;
     }
 
     .thesis > a {
@@ -109,6 +108,11 @@ span {
     }
 
     .thesis {
-        bottom: 0;
+        bottom: 1.5vh;
+    }
+
+    .main {
+        height: 90vh;
+        width: 92.5vw;
     }
 }
